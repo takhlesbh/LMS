@@ -67,7 +67,7 @@ jobs:
           - os: ubuntu-22.04
             php: 8.0
             db: pgsql
-            extensions: xmlrpc-beta
+            extensions: xmlrpc
 
     steps:
       - name: Setting up DB mysql
