@@ -6,4 +6,47 @@
  *  IMPORTANT: Please remember not to override this file when updating Edumy theme. Keep a backup of this file before updating Edumy theme.
  *
  *
- */
+*/
+
+/* Simple sidebar styles */
+.simple-sidebar {
+  padding: 10px;
+}
+.simple-sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.simple-sidebar-menu li {
+  margin-bottom: 10px;
+}
+.simple-sidebar-menu a {
+  display: flex;
+  align-items: center;
+  color: #444;
+  text-decoration: none;
+}
+.simple-sidebar-menu a .label {
+  margin-left: 8px;
+}
+@media (max-width: 768px) {
+  .simple-sidebar {
+    display: none;
+  }
+}
+
+body.ccnDarkMode .simple-sidebar-menu a {
+  color: #fff;
+}
+
+/* High contrast mode */
+body.ccnHighContrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+body.ccnHighContrast a {
+  color: #0ff !important;
+}
+body.ccnHighContrast .simple-sidebar-menu a {
+  color: #fff !important;
+}

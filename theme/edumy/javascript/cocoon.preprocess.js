@@ -207,6 +207,16 @@ $(function() {
       $("#ccnToggleDarkMode").addClass("active");
       $("body").addClass("ccnDarkMode");
     }
+    // High contrast mode
+    $("#ccnToggleContrast").click(function() {
+      $("#ccnToggleContrast").toggleClass("active");
+      $("body").toggleClass("ccnHighContrast").css("transition", "none");
+      document.cookie = 'contrast=' + ($("#ccnToggleContrast").hasClass("active") ? 'high' : 'normal') + '; path=/;';
+    });
+    if (document.cookie.match(/contrast=high/i) != null) {
+      $("#ccnToggleContrast").addClass("active");
+      $("body").addClass("ccnHighContrast");
+    }
   });
   $(window).on('load', function() {
     $(".ccn_course_content > li.section:first-child > .ccnTopicFirstExp .panel-collapse").addClass("show");

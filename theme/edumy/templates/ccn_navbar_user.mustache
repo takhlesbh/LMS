@@ -8,7 +8,12 @@
     {{#if_user_dark_mode_icon}}
       <li class="user_setting ccn-settings-nav ccn-settings-nav-darkMode">
         <div class="dropdown">
-          <a class="notification_icon" id="ccnToggleDarkMode"><span class="{{{user_dark_mode_icon}}}"></span></a>
+          <a class="notification_icon" id="ccnToggleDarkMode" aria-label="Toggle dark mode"><span class="{{{user_dark_mode_icon}}}"></span></a>
+        </div>
+      </li>
+      <li class="user_setting ccn-settings-nav ccn-settings-nav-contrast">
+        <div class="dropdown">
+          <a class="notification_icon" id="ccnToggleContrast" aria-label="Toggle high contrast mode"><span class="fa fa-adjust"></span></a>
         </div>
       </li>
     {{/if_user_dark_mode_icon}}
